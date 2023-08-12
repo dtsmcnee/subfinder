@@ -50,7 +50,7 @@ func (s *Source) Run(ctx context.Context, domain string, session *subscraping.Se
 			"Content-Type": "application/json",
 		}
 
-		resp, err := session.Get(ctx, fmt.Sprintf("https://api.dnsdb.info/lookup/rrset/name/*.%s?limit=1000000000000", domain), "", headers)
+		resp, err := session.Get(ctx, fmt.Sprintf("https://api.dnsdb.info/lookup/rrset/name/*.%s?limit=1000000000000&time_last_after=1659312000", domain), "", headers)
 		if err != nil {
 			results <- subscraping.Result{Source: s.Name(), Type: subscraping.Error, Error: err}
 			s.errors++
