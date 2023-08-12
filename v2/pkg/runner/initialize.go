@@ -4,8 +4,8 @@ import (
 	"net"
 	"strings"
 
-	"github.com/dtsmcnee/projectdiscovery/subfinder/v2/pkg/passive"
-	"github.com/dtsmcnee/projectdiscovery/subfinder/v2/pkg/resolve"
+	"github.com/dtsmcnee/subfinder/v2/pkg/passive"
+	"github.com/dtsmcnee/subfinder/v2/pkg/resolve"
 	"github.com/projectdiscovery/dnsx/libs/dnsx"
 )
 

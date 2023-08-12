@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dtsmcnee/projectdiscovery/subfinder/v2/pkg/subscraping"
+	"github.com/dtsmcnee/subfinder/v2/pkg/subscraping"
 	"github.com/projectdiscovery/utils/ptr"
 )
 
@@ -33,7 +33,7 @@ func (s *Source) Run(ctx context.Context, domain string, session *subscraping.Se
 		}(time.Now())
 
 		resp, err := session.SimpleGet(ctx, fmt.Sprintf("https://certificatedetails.com/%s", domain))
-		// the 404 page still contains around 100 subdomains - https://github.com/dtsmcnee/projectdiscovery/subfinderissues/774
+		// the 404 page still contains around 100 subdomains - https://github.com/dtsmcnee/subfinderissues/774
 		if err != nil && ptr.Safe(resp).StatusCode != http.StatusNotFound {
 			results <- subscraping.Result{Source: s.Name(), Type: subscraping.Error, Error: err}
 			s.errors++

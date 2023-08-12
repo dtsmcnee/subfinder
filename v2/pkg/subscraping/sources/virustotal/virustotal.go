@@ -8,7 +8,7 @@ import (
 
 	jsoniter "github.com/json-iterator/go"
 
-	"github.com/dtsmcnee/projectdiscovery/subfinder/v2/pkg/subscraping"
+	"github.com/dtsmcnee/subfinder/v2/pkg/subscraping"
 )
 
 type response struct {

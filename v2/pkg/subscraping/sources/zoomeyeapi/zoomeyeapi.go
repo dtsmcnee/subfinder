@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/dtsmcnee/projectdiscovery/subfinder/v2/pkg/subscraping"
+	"github.com/dtsmcnee/subfinder/v2/pkg/subscraping"
 )
 
 // search results

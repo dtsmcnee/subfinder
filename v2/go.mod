@@ -1,4 +1,4 @@
-module github.com/dtsmcnee/projectdiscovery/subfinder/v2
+module github.com/dtsmcnee/subfinder/v2
 
 go 1.18
 
