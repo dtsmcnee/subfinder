@@ -6,8 +6,8 @@ import (
 
 	"gopkg.in/yaml.v3"
 
+	"github.com/dtsmcnee/projectdiscovery/subfinder/v2/pkg/passive"
 	"github.com/projectdiscovery/gologger"
-	"github.com/projectdiscovery/subfinder/v2/pkg/passive"
 	fileutil "github.com/projectdiscovery/utils/file"
 )
 

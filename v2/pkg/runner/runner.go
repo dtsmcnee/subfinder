@@ -14,8 +14,8 @@ import (
 	"github.com/projectdiscovery/gologger"
 	fileutil "github.com/projectdiscovery/utils/file"
 
-	"github.com/projectdiscovery/subfinder/v2/pkg/passive"
-	"github.com/projectdiscovery/subfinder/v2/pkg/resolve"
+	"github.com/dtsmcnee/projectdiscovery/subfinder/v2/pkg/passive"
+	"github.com/dtsmcnee/projectdiscovery/subfinder/v2/pkg/resolve"
 )
 
 // Runner is an instance of the subdomain enumeration
